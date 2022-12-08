@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "sweaty-heart"
+version = "0.1.0"
+description = "A rust library for parsing gsr and ppg sensor data"
+authors = ["Kevin Silvester <kevinsilvester05@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^0.14.3"
+pytest = "^7.2.0"
+pytest-benchmark = "^4.0.0"
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "sweaty-heart"
+version = "0.1.0"
+description = "A rust library for parsing gsr and ppg sensor data"
+authors = [{ name = "Kevin Silvester", email = "kevinsilvester05@gmail.com" }]
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: System :: Hardware :: Universal Serial Bus (USB)",
+  "Typing :: Typed",
+]
+
+[project.urls]
+homepage = "https://github.com/moviology/sweaty-heart"
+repository = "https://github.com/moviology/sweaty-heart"
