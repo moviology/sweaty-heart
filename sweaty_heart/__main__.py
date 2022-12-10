@@ -1,3 +1,6 @@
-from sweaty_heart import sum_as_string
+from sweaty_heart import SerialReader
 
-sum_as_string(2, 2)
+
+reader = SerialReader("/dev/ttyACM0", 115_200, 10)
+reader.open()
+val = reader.read()
