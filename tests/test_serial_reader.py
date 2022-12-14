@@ -10,17 +10,17 @@ from sweaty_heart import SerialReader
 
 # def test_init(benchmark):
 #     benchmark(init)
-class TestSerialReader:
-    reader = None
+# class TestSerialReader:
+#     reader = None
 
-    def init(self):
-        reader = SerialReader("/dev/ttyACM0", 115_200, 20)
+#     def init(self):
+#         reader = SerialReader("/dev/ttyACM0", 115_200, 20)
 
-    def test_init(self, benchmark):
-        benchmark(self.init)
+#     def test_init(self, benchmark):
+#         benchmark(self.init)
 
-    def test_open(self, benchmark):
-        reader = SerialReader("/dev/ttyACM0", 115_200, 20)
-        reader.open()
-        val = reader.read()
-        print(val)
+#     def test_open(self, benchmark):
+#         reader = SerialReader("/dev/ttyACM0", 115_200, 20)
+#         reader.open()
+#         val = reader.read()
+#         print(val)

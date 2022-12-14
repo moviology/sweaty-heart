@@ -7,11 +7,14 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+heartpy = "^1.2.7"
 
 [tool.poetry.group.dev.dependencies]
 maturin = "^0.14.3"
 pytest = "^7.2.0"
 pytest-benchmark = "^4.0.0"
+pyserial = "^3.5"
+matplotlib = "^3.6.2"
 
 [build-system]
 requires = ["maturin>=0.14,<0.15"]
